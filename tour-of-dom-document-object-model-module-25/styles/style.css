@@ -1,0 +1,19 @@
+h1 {
+    color: lightcoral;
+}
+
+.yellow-bg {
+    /* background-color: yellowgreen; */
+    /* background-color: yellowgreen !important; */
+    /* text-align: center; */
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.large-text {
+    font-size: 2em;
+}

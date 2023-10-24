@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      .fruits-container li {
+        color: tomato;
+      }
+      #fruits-title {
+        color: black;
+      }
+      .important-places {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my DOM</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fugit
+        aliquid assumenda velit veritatis nihil rem recusandae veniam cupiditate
+        temporibus quos, a esse ipsa voluptate suscipit tempora tenetur ex cum!
+      </p>
+    </header>
+    <main id="main-container">
+      <section>
+        <h1>My awesome DOM de baba</h1>
+        <ul>
+          <li>Jalali set</li>
+          <li>Shafayet</li>
+          <li>Bonobash</li>
+          <li>dom de re baba</li>
+        </ul>
+      </section>
+      <section class="fruits-container">
+        <h1 id="fruits-title" class="some-class random-class blue-bg">
+          Fruits i like
+        </h1>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Carrot</li>
+        </ul>
+      </section>
+      <section id="places-container" class="large-text">
+        <h1 id="places-title">Place i like to visit</h1>
+        <ul id="places-list">
+          <li class="important-places">Soondarban</li>
+          <li class="important-places">bandorban</li>
+          <li class="important-places">kataban</li>
+          <li class="other-place">shalbon</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+  <script>
+    const student = {
+      name: "abul",
+      id: 1,
+      study: function (time) {
+        console.log(time, "study kortechi");
+      },
+    };
+    // console.log("adding JS inside the html file");
+    const liCollection = document.getElementsByTagName("li");
+    // console.log(liCollection);
+    for (const li of liCollection) {
+      // console.log(li);
+      // console.log(li.innerText);
+      // li.style.backgroundColor = "yellow";
+    }
+
+    const allHeadings = document.getElementsByTagName("h1");
+    for (const h1 of allHeadings) {
+      // console.log(h1.innerText);
+    }
+
+    // option-1: getElementsByTagName
+    const para = document.getElementsByTagName("p");
+    for (const p of para) {
+      // console.log(p.innerText);
+      // console.log(p.innerHTML);
+      // console.log(p.textContent);
+    }
+
+    // option-2: getElementById
+    const fruitsTitle = document.getElementById("fruits-title");
+    fruitsTitle.innerText = "Fruits changed by JS";
+    fruitsTitle.style.backgroundColor = "yellow";
+
+    // option-3: getElementsByClassName
+    const places = document.getElementsByClassName("important-places");
+    // console.log(places);
+    for (const place of places) {
+      console.log(place.innerText);
+      place.style.backgroundColor = "green";
+    }
+
+    // option-4: querySelector
+
+    // option-5: querySelectorAll
+    // ekhane 1: for of 2: for Each duitai chalate parbo
+    const someLi = document.querySelectorAll(".fruits-container li");
+    console.log(someLi);
+
+    for (const li of someLi) {
+      console.log(li);
+      console.log(li.innerText);
+      li.style.backgroundColor = "blue";
+    }
+  </script>
+  <script src="js/dom.js"></script>
+  <script src="js/styleIn.js"></script>
+  <script src="js/append.js"></script>
+</html>
