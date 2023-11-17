@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-3/4 mx-auto text-center bg-gray-500 mt-8 py-12 text-white">
+      <p>Price: <span id="price">100</span></p>
+      <button id="apply" class="bg-red-400 py-3 px-8 rounded-lg mt-5">
+        apply
+      </button>
+    </div>
+    <script>
+      /* function percentage(number, percent) {
+             const percentage = (number * percent) / 100;
+             return number - percentage;
+           }
+
+           // উদাহরণ:
+           var total = 100;
+           var percentValue = 30;
+           var result = percentage(total, percentValue);
+           console.log(result);
+            */
+      /*
+           const parcent = (100 * 30) / 100;
+           const result = 100 - parcent;
+           console.log(result);
+      */
+
+      document.getElementById("apply").addEventListener("click", function () {
+        const price = document.getElementById("price");
+        const priceElementValueString = price.innerText;
+        const priceElementValue = parseFloat(priceElementValueString);
+        const percent = 30;
+        const percentValue = (priceElementValue * percent) / 100;
+        const result = priceElementValue - 30;
+        price.innerText = result;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-slate-100">
+    <div class="bg-blue-300 w-4/5 h-4/5 mx-auto py-8 px-8 mt-10 rounded-md">
+      <h1 class="text-center text-3xl font-semibold font-mono mb-5">
+        My Text Editor
+      </h1>
+      <div class="border border-gray-900 bg-blue-200 p-3">
+        <div class="flex justify-between ps-5 pr-14">
+          <div class="grid grid-cols-3 gap-5">
+            <button id="boldElementText">
+              <i class="fa-solid fa-bold"></i>
+            </button>
+            <button id="italicElementText">
+              <i class="fa-solid fa-italic"></i>
+            </button>
+            <button id="underlineElementText">
+              <i class="fa-solid fa-u"></i>
+            </button>
+          </div>
+          <div class="grid grid-cols-4 gap-5">
+            <button id="align-left">
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button id="align-center">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button id="align-right">
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button id="align-justify">
+              <i class="fa-solid fa-align-justify"></i>
+            </button>
+          </div>
+          <div class="grid grid-cols-3">
+            <span>
+              Fon-size:
+              <input
+                type="number"
+                name=""
+                id="fontSizeInput"
+                class="w-10 rounded-md bg-transparent"
+                min="1"
+                value="16"
+              />
+            </span>
+            <button id="upperOrLowercase">aA</button>
+            <input type="color" name="" id="input-color" />
+          </div>
+        </div>
+        <hr class="my-4 border-t-2 border-gray-900" />
+        <textarea
+          name=""
+          id="text-area"
+          class="w-full resize-none p-2"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

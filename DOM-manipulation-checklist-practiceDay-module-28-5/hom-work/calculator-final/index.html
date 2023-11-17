@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <form id="form" class="w-3/4 mx-auto text-center bg-amber-400 mt-8 py-12">
+      <h1 class="text-white mb-8 text-3xl">DISCOUNT CALCULATOR</h1>
+      <p class="text-xl">Price: <span id="price">100</span></p>
+      <input id="input-field" class="block rounded mx-auto px-2" type="text" />
+      <button id="apply" class="bg-red-400 py-3 px-8 rounded-lg mt-5">
+        apply
+      </button>
+      <p id="para" class="hidden text-xl mt-5">
+        Please pay: <span id="percentage-of-price"></span>
+      </p>
+    </form>
+    <script>
+      /* function percentage(number, percent) {
+             const percentage = (number * percent) / 100;
+             return number - percentage;
+           }
+
+           // উদাহরণ:
+           var total = 100;
+           var percentValue = 30;
+           var result = percentage(total, percentValue);
+           console.log(result);
+            */
+      /*
+           const parcent = (100 * 30) / 100;
+           const result = 100 - parcent;
+           console.log(result);
+      */
+      /* 
+      // normal calculation not from tag
+      document.getElementById("apply").addEventListener("click", function () {
+        const price = document.getElementById("price");
+        const priceElementValueString = price.innerText;
+        const priceElementValue = parseFloat(priceElementValueString);
+        const percent = 30;
+        const percentValue = (priceElementValue * percent) / 100;
+        const result = priceElementValue - 30;
+        const percentageOfPrice = document.getElementById(
+          "percentage-of-price"
+        );
+        // price.innerText = result;
+        percentageOfPrice.innerText = result;
+        const para = document.getElementById("para");
+        const inputField = document.getElementById("input-field");
+        const inputFieldValueString = inputField.value;
+        if (inputFieldValueString === "DISC30") {
+          para.style.display = "block";
+        } else {
+          alert("please enter the currect password ");
+        }
+      }); */
+
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const price = document.getElementById("price");
+          const priceElementValueString = price.innerText;
+          const priceElementValue = parseFloat(priceElementValueString);
+          const percent = 30;
+          const percentValue = (priceElementValue * percent) / 100;
+          const result = priceElementValue - 30;
+          const percentageOfPrice = document.getElementById(
+            "percentage-of-price"
+          );
+          // price.innerText = result;
+          percentageOfPrice.innerText = result;
+          const para = document.getElementById("para");
+          const inputField = document.getElementById("input-field");
+          const inputFieldValueString = inputField.value;
+          if (inputFieldValueString === "DISC30") {
+            para.style.display = "block";
+            para.style.color = "blue";
+          } else {
+            alert("please enter the currect password ");
+          }
+          inputField.value = "";
+        });
+    </script>
+  </body>
+</html>
