@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* End common css  */
+.bg-heading {
+    background-color: #E7F4FB;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.logo span {
+    font-size: 16px;
+    color: #676C6F;
+}
+
+.btn-blog {
+    padding: 9px 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1090D8;
+}
+
+input {
+    width: 70%;
+    border: none;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.large-button {
+    background-color: #1090D8;
+    color: white;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+}
+
+.img-sizing {
+    width: 200px;
+    height: 200px;
+}
+
+.Area-Calculation {
+    position: relative;
+}
+
+.edit-icon {
+    font-size: 25px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.check-icon {
+    font-size: 25px;
+    color: #1090D8;
+    cursor: pointer;
+}
+
+/* javascript  */
+.value {
+    /* display: none; */
+    visibility: hidden;
+}

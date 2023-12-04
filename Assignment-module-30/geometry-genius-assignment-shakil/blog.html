@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      p {
+        font-size: 18px;
+      }
+      body::-webkit-scrollbar {
+        /* background-color: red; */
+        background-color: transparent;
+      }
+      body::-webkit-scrollbar-thumb {
+        /* background-color: green; */
+        background: linear-gradient(red, blue, green);
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="d-flex px-4 py-2 rounded-3 justify-content-between align-items-center mt-5 bg-heading"
+      >
+        <div>
+          <div>
+            <a href="index.html" class="logo text-dark"
+              >Interactive<br /><span>Geometry Genius</span></a
+            >
+          </div>
+        </div>
+        <div>
+          <a href="blog.html" class="btn-blog text-white">Blog</a>
+        </div>
+      </div>
+      <div class="mt-5">
+        <h4>১) What is DOM and what is the purpose of DOM?</h4>
+        <p>
+          উত্তর ঃ- ডম হচ্ছে Document object model । DOM এর উদ্দেশ্য হচ্ছে আমরা
+          javascript code লিখলে সেটা নরমালি ব্রাউজার বোঝতে পারে না তাই Dom
+          ব্যাবহার করতে হয় জাতে ব্রাউজার বোঝতে পারে এবং আউটপোট দেখাতে সক্ষম হয় ।
+          আমাদের html index এ যা কিছু আছে অর্থাৎ সব tag গুলি হচ্ছে DOM এর মদ্ধে
+          অন্তরভুক্ত ।
+        </p>
+      </div>
+      <div>
+        <h4>
+          ২) How will you select HTML elements using DOM? Name the DOM methods.
+        </h4>
+        <p>
+          উত্তর ঃ- আমরা ৫ ভাবে এইচটিএমএল এলিমেনট কে সিলেক্ট করতে পারি যেমন:-
+        </p>
+        <p>1. document.getElementsByTagName("")</p>
+        <p>2. document.getElementsByClassName("")</p>
+        <p>3. document.getElementById("")</p>
+        <p>4. document.querySelector("")</p>
+        <p>5. document.querySelectorAll("")</p>
+        <p>
+          getElementsByTagName এবং getElementsByClassName দিয়ে সিলেক্ট করলে
+          HTMLCollection [ ] পাবো তাই এটাই সরাসরি কাজ করা যাবে না এর জন্নে আমরা
+          লুপ করবো জাতে কাজ করাতে পারি । নামে মিল পাবে যেটায় যেটায় সবগুলিকে ধরবে
+          ।
+        </p>
+        <p>
+          আর getElementById এবং querySelector দিয়ে সিলেক্ট করলে সরাসরি কাজ করতে
+          পারবো এখানে লুপ করতে হবে না। কিন্তু এটাই প্রথমের যেই নামে মিলবে
+          সেইটাকেই সুধু ধরবে নিচের গুলিকে ধরবে না এটা ইউনিক । querySelector দিয়ে
+          সিএসএস যেমন সিলেক্ট করতে পারি তেমন ভাবে এতাকেও ধরতে পারি।
+        </p>
+        <p>
+          querySelectorAll দিয়ে সিলেক্ট করলে NodeList পাবো । আর এটা যেই নাম দিয়ে
+          ধরবো সবগুলি পাবে ।আর querySelectorAll দিয়ে সিএসএস যেমন সিলেক্ট করতে
+          পারি তেমন ভাবে এটাকেও ধরতে পারি।
+        </p>
+      </div>
+      <div>
+        <h4>৩) What is event bubble?</h4>
+        <p>
+          উত্তর ঃ- event bubble হচ্ছে আমরা যদি কোনো ইভেন্ট নিয়ে থাকি তাহলে নিচের
+          যেটা target ইভেন্ট ধরছি সেটার কাজ হবে আগে এবং এর পরে হবে event bubble
+          অর্থাৎ উপরের দিকে আরো কোনো ইভেন্ট ধরেছি কিনা সেটা চেক করবে আর সেই
+          ইভেন্ট এর কাজ করবে এরকম একদম প্যারেন্ট ধরে ধরে document পর্যন্ত চলে
+          যাবে যে কোনো জায়গায় ইভেন্ট করা হয়েছে কিনা এটাই হচ্ছে event bubble ।
+        </p>
+      </div>
+      <div>
+        <h4>৪) What is a callback function and why will you use it?</h4>
+        <p>
+          উত্তর ঃ- callback function অনেক সাশ্রয়ী কাজ করে থাকে এটা মূলত একি
+          type এর কাজ যেটা বার বার করতে হয় সেই কাজ কে যদি এই callback function এ
+          নেই এবং এই কাজ টা যেখানে যেখানে চাই সেই খানে use করতে পারবো just এই
+          function এর নাম টাকে call করে দিবো তাহলে আর বার বার same code লিখতে
+          হবে না ।
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

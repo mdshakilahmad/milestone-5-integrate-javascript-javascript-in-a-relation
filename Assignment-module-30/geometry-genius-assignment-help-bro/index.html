@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div
+          class="d-flex px-4 py-2 rounded-3 justify-content-between align-items-center mt-5 bg-heading"
+        >
+          <div>
+            <div>
+              <h3 class="logo">
+                Interactive<br /><span>Geometry Genius</span>
+              </h3>
+            </div>
+          </div>
+          <div>
+            <a href="#" class="btn-blog text-white">Blog</a>
+          </div>
+        </div>
+        <div class="row mt-5 mb-5 gap-sm-5 gap-lg-0">
+          <div class="col-md-9">
+            <div class="row g-3">
+              <div class="col-sm-12 col-lg-4">
+                <div class="card h-100 p-3">
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="img-sizing"
+                      src="./images/triangle.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-item">
+                    <h4 class="text-center my-4">Triangle</h4>
+                    <p class="text-center">Area (A) = 0.5&#xd7;b&#xd7;h</p>
+                    <div
+                      class="my-2 d-flex justify-content-evenly align-items-center"
+                    >
+                      <div class="value">b= <span>0</span> cm</div>
+                      <div class="value">h= <span>0</span> cm</div>
+                      <div>
+                        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+                      </div>
+                    </div>
+                    <form id="Triangle-form" action="">
+                      <div
+                        id="Triangle-all-input-area"
+                        class="d-flex justify-content-between gap-1"
+                      >
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="triangle-input-field-one"
+                            placeholder="b"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="triangle-input-field-two"
+                            placeholder="h"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <i
+                            id="check-icon"
+                            class="fa-solid fa-square-check check-icon"
+                          ></i>
+                        </div>
+                      </div>
+                      <button type="submit" class="large-button my-4">
+                        Calculate
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="card h-100 p-3">
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="img-sizing"
+                      src="./images/rectangle.png"
+                      alt="rectangle"
+                    />
+                  </div>
+                  <div class="text-item">
+                    <h4 class="text-center my-4">Rectangle</h4>
+                    <p class="text-center">Area (A) = w&#xd7;I</p>
+                    <div
+                      class="my-2 d-flex justify-content-evenly align-items-center"
+                    >
+                      <div class="value">w= <span>0</span> cm</div>
+                      <div class="value">l= <span>0</span> cm</div>
+                      <div>
+                        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+                      </div>
+                    </div>
+                    <form id="Rectangle-form" action="">
+                      <div class="d-flex justify-content-between gap-1">
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="rectangle-input-field-one"
+                            placeholder="w"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="rectangle-input-field-two"
+                            placeholder="l"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-square-check check-icon"></i>
+                        </div>
+                      </div>
+                      <button type="submit" class="large-button my-4">
+                        Calculate
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="card h-100 p-3">
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="img-sizing"
+                      src="./images/parallelogram.png"
+                      alt="parallelogram"
+                    />
+                  </div>
+                  <div class="text-item">
+                    <h4 class="text-center my-4">Parallelogram</h4>
+                    <p class="text-center">Area (A) = b&#xd7;h</p>
+                    <div
+                      class="my-2 d-flex justify-content-evenly align-items-center"
+                    >
+                      <div class="value">b= <span>0</span> cm</div>
+                      <div class="value">h= <span>0</span> cm</div>
+                      <div>
+                        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+                      </div>
+                    </div>
+                    <form id="Parallelogram-form" action="">
+                      <div class="d-flex justify-content-between gap-1">
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="Parallelogram-input-field-one"
+                            placeholder="b"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="Parallelogram-input-field-two"
+                            placeholder="h"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-square-check check-icon"></i>
+                        </div>
+                      </div>
+                      <button class="large-button my-4">Calculate</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="card h-100 p-3">
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="img-sizing"
+                      src="./images/rhombus.png"
+                      alt="rhombus"
+                    />
+                  </div>
+                  <div class="text-item">
+                    <h4 class="text-center my-4">Rhombus</h4>
+                    <p class="text-center">
+                      Area (A) = 0.5&#xd7;d<sub>1</sub>&#xd7;d<sub>2</sub>
+                    </p>
+                    <div
+                      class="my-2 d-flex justify-content-evenly align-items-center"
+                    >
+                      <div class="value">d1= <span>0</span> cm</div>
+                      <div class="value">d2= <span>0</span> cm</div>
+                      <div>
+                        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+                      </div>
+                    </div>
+                    <form id="Rhombus-form" class="Rhombus" action="">
+                      <div class="d-flex justify-content-between gap-1">
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="Rhombus-input-field-one"
+                            placeholder="d1"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="Rhombus-input-field-two"
+                            placeholder="d2"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-square-check check-icon"></i>
+                        </div>
+                      </div>
+                      <button class="large-button my-4">Calculate</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="card h-100 p-3">
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="img-sizing"
+                      src="./images/pentagon.png"
+                      alt="pentagon"
+                    />
+                  </div>
+                  <div class="text-item">
+                    <h4 class="text-center my-4">Pentagon</h4>
+                    <p class="text-center">Area (A) = 0.5&#xd7;p&#xd7;b</p>
+                    <div
+                      class="my-2 d-flex justify-content-evenly align-items-center"
+                    >
+                      <div class="value">p= <span>0</span> cm</div>
+                      <div class="value">b= <span>0</span> cm</div>
+                      <div>
+                        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+                      </div>
+                    </div>
+                    <form id="Pentagon-form" action="">
+                      <div class="d-flex justify-content-between gap-1s">
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="Pentagon-input-field-one"
+                            placeholder="p"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="Pentagon-input-field-two"
+                            placeholder="b"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-square-check check-icon"></i>
+                        </div>
+                      </div>
+                      <button class="large-button my-4">Calculate</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="card h-100 p-3">
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="img-sizing"
+                      src="./images/ellipse.png"
+                      alt="ellipse"
+                    />
+                  </div>
+                  <div class="text-item">
+                    <h4 class="text-center my-4">Ellipse</h4>
+                    <p class="text-center">
+                      Area (A) = <span class="fs-5">&pi;</span>ab
+                    </p>
+                    <div
+                      class="my-2 d-flex justify-content-evenly align-items-center"
+                    >
+                      <div class="value">a= <span>0</span> cm</div>
+                      <div class="value">b= <span>0</span> cm</div>
+                      <div>
+                        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+                      </div>
+                    </div>
+                    <form id="Ellipse-form" action="">
+                      <div class="d-flex justify-content-between gap-1">
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="Ellipse-input-field-one"
+                            placeholder="a"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <input
+                            type="text"
+                            name=""
+                            id="Ellipse-input-field-two"
+                            placeholder="b"
+                          />
+                          <span>cm</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-square-check check-icon"></i>
+                        </div>
+                      </div>
+                      <button class="large-button my-4">Calculate</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h3 class="text-center border-bottom border-black border-3">
+              Area Calculation
+            </h3>
+            <div id="calculation-area">
+              <ol id="ol"></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
